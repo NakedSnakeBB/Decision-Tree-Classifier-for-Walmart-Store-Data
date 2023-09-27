@@ -6,14 +6,14 @@ Exploratory Data Analysis on all data files.
 Data
 The data used is the 'walmart_cleaned.csv' file. It contains store data like:
 
-Store - the store number
-Size - the store's square footage
-Temperature - the average temp that week
-Promo - indicates there was a promotion that week
+1.Store - the store number
+2.Size - the store's square footage
+3.Temperature - the average temp that week
 and more...
 The target variable is 'Store', which represents the store number.
 
 Model
+
 The model built is a decision tree classifier from scikit-learn. The hyperparameters were tuned using GridSearchCV to find the best parameters.
 
 The best parameters found were:
@@ -24,6 +24,7 @@ Splitter: best
 Using these parameters, the model achieves 100% accuracy on the test set.
 
 Usage
+
 The main steps are:
 
 Import libraries and data
