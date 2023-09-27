@@ -16,6 +16,8 @@ The approach for this project involves the following steps:
 
 ## Data
 
+https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting
+
 The data used for this project is contained in the 'walmart_cleaned.csv' file, which includes store data such as:
 
 - Store: Store number
@@ -28,3 +30,5 @@ The target variable to predict is 'Store', representing the store number.
 ## Model
 
 A Decision Tree Classifier from scikit-learn is used for this project. The hyperparameters of the model are tuned using
+
+
