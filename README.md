@@ -1,41 +1,30 @@
 # Decision-Tree-Classifier-for-Walmart-Store-Data
-This Jupyter notebook builds a decision tree classifier to predict the Walmart store based on features like store size, temperature, promotions, etc. The model achieves 100% accuracy on the test set.
-Problem Statement
-Predict department-wide weekly sales for 45 Walmart stores located in different regions based on historical data. Holiday weeks are weighted 5x higher than non-holiday weeks.Approach
-Exploratory Data Analysis on all data files.
-Data
-The data used is the 'walmart_cleaned.csv' file. It contains store data like:
 
-1.Store - the store number
-2.Size - the store's square footage
-3.Temperature - the average temp that week
-and more...
-The target variable is 'Store', which represents the store number.
+This Jupyter notebook provides a decision tree classifier to predict Walmart store locations based on features such as store size, temperature, promotions, and more. The model achieves 100% accuracy on the test set.
 
-Model
+## Problem Statement
 
-The model built is a decision tree classifier from scikit-learn. The hyperparameters were tuned using GridSearchCV to find the best parameters.
+The goal of this project is to predict the Walmart store location (Store number) based on historical data. Weekly sales for 45 Walmart stores, located in different regions, are predicted. Holiday weeks are given a higher weight (5x) than non-holiday weeks.
 
-The best parameters found were:
+## Approach
 
-Criterion: gini
-Max depth: None
-Splitter: best
-Using these parameters, the model achieves 100% accuracy on the test set.
+The approach for this project involves the following steps:
 
-Usage
+1. Exploratory Data Analysis on all data files.
+2. Building a Decision Tree Classifier to predict store locations.
+3. Tuning hyperparameters using GridSearchCV to find the best model configuration.
 
-The main steps are:
+## Data
 
-Import libraries and data
-Explore and clean data
-Split data into train and test sets
-Build model with GridSearchCV to find best parameters
-Evaluate model on test set
-Visualize model as a tree plot
-To use the model on new data:
+The data used for this project is contained in the 'walmart_cleaned.csv' file, which includes store data such as:
 
-Import the cleaned csv data
-Select features to use for prediction
-Instantiate model with best parameters
-Call .predict(data) to generate predictions
+- Store: Store number
+- Size: Store's square footage
+- Temperature: Average temperature for the week
+- and more...
+
+The target variable to predict is 'Store', representing the store number.
+
+## Model
+
+A Decision Tree Classifier from scikit-learn is used for this project. The hyperparameters of the model are tuned using
